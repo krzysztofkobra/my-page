@@ -19,7 +19,7 @@
   }
   
   .dark-mode {
-    --primary-bg: #28241e;
+    --primary-bg: rgb(41 37 36);
     --secondary-bg: #1e1b16;
     --text-color: #e6e2d9;
     --card-bg: #3a342a;
