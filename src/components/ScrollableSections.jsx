@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useTheme } from '../contexts/ThemeContext';
 import '../styles/Scrollable.css';
-import exampleImage from './images/example.jpg';
+import exampleImage from '../images/example.jpg';
 
 const ScrollableSections = () => {
   const { darkMode } = useTheme();
