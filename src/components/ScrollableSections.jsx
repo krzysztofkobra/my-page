@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useTheme } from '../contexts/ThemeContext';
 import '../styles/Scrollable.css';
-import exampleImage from '../images/example.jpg';
 
 const ScrollableSections = () => {
   const { darkMode } = useTheme();
@@ -31,7 +30,7 @@ const ScrollableSections = () => {
     {
       title: 'Minecraft',
       description: 'A brief description of this amazing project and what technologies were used.',
-      image: exampleImage,
+      image: `${process.env.PUBLIC_URL}/images/example.jpg`,
       technologies: ['React', 'Node.js', 'CSS'],
       github: 'https://github.com/krzysztofkobra/ClockApp'
     },
