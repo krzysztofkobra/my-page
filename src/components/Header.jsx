@@ -1,8 +1,6 @@
 import React from 'react';
 import { useTheme } from '../contexts/ThemeContext';
 import '../styles/Header.css';
-import dark from '../images/szre.png';
-import normal from '../images/bez.png';
 
 const Header = () => {
   const { darkMode } = useTheme();
