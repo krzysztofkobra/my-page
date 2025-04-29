@@ -5,11 +5,11 @@ const AboutSection = () => {
   const { darkMode } = useTheme();
 
   return (
-    <section className={`about-section py-5 ${darkMode ? 'bg-dark text-light' : 'bg-light text-dark'}`}>
+    <section className="about-section py-5" style={{ backgroundColor: 'var(--primary-bg)', color: 'var(--text-color)' }}>
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-8">
-            <h2 className="text-center mb-4">About Me</h2>
+            <h2 className="text-center mb-4" style={{ color: 'var(--text-color)' }}>About Me</h2>
             <p className="lead mb-3">
               I'm a passionate software developer with expertise in full-stack development. I love creating clean, 
               efficient, and user-friendly applications that solve real-world problems.

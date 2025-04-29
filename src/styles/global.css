@@ -3,8 +3,7 @@
     --secondary-bg: #f3efe2;
     --text-color: #433c38;
     --card-bg: #ffffff;
-    --accent-gradient-start: #f8e2b9;
-    --accent-gradient-end: #f0d9ae;
+    --hero-bg: #ffffff;
     --border-color: #ffffff;
     --icon-bg: #f4e2bf;
     --icon-color: #b16f24;
@@ -23,8 +22,7 @@
     --secondary-bg: #1e1b16;
     --text-color: #e6e2d9;
     --card-bg: #3a342a;
-    --accent-gradient-start: #3a342a;
-    --accent-gradient-end: #1e1b16;
+    --hero-bg: #3a342a;
     --border-color: #4d4438;
     --icon-bg: #1e1b16;
     --icon-color: #d6a456;
@@ -35,7 +33,7 @@
     --footer-text: #9e9a91;
     --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     --hero-text: #e6e2d9;
-    --accent-bg: #3a342a;
+    --accent-bg: #c18244;
   }
   
   * {

@@ -1,5 +1,5 @@
 .hero {
-    background: linear-gradient(to right, var(--accent-gradient-start), var(--accent-gradient-end));
+    background: var(--hero-bg);
     color: var(--hero-text);
     padding: 6rem 2rem;
   }

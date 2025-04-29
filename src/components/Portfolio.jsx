@@ -5,13 +5,13 @@ const PortfolioSection = () => {
   const { darkMode } = useTheme();
 
   return (
-    <section className={`portfolio-section py-5 ${darkMode ? 'bg-dark text-light' : 'bg-light text-dark'}`}>
+    <section className="portfolio-section py-5" style={{ backgroundColor: 'var(--primary-bg)', color: 'var(--text-color)' }}>
       <div className="container">
         <h2 className="text-center mb-4">Portfolio</h2>
         <div className="row g-4">
           {/* Project 1 */}
           <div className="col-md-6 col-lg-4">
-            <div className={`card h-100 ${darkMode ? 'bg-secondary text-light' : ''}`}>
+          <div className="card h-100" style={{ backgroundColor: 'var(--card-bg)', color: 'var(--text-color)' }}>
               <img 
                 src="/api/placeholder/400/300" 
                 className="card-img-top" 
@@ -23,10 +23,10 @@ const PortfolioSection = () => {
                   A brief description of this amazing project and what technologies were used.
                 </p>
                 <div className="mb-3">
-                  <span className={`badge ${darkMode ? 'bg-dark border border-light' : 'bg-light text-dark'} me-2`}>React</span>
-                  <span className={`badge ${darkMode ? 'bg-dark border border-light' : 'bg-light text-dark'}`}>Node.js</span>
+                  <span className="badge me-2" style={{ backgroundColor: 'var(--accent-bg)', color: 'var(--text-color)' }}>React</span>
+                  <span className="badge me-2" style={{ backgroundColor: 'var(--accent-bg)', color: 'var(--text-color)' }}>Angular</span>
                 </div>
-                <a href="#" className={`text-decoration-none ${darkMode ? 'text-warning' : ''}`}>
+                <a href="#" className="text-decoration-none" style={{ color: 'var(--accent-color)' }}>
                   View Project <i className="bi bi-box-arrow-up-right ms-1"></i>
                 </a>
               </div>
@@ -35,7 +35,7 @@ const PortfolioSection = () => {
 
           {/* Project 2 */}
           <div className="col-md-6 col-lg-4">
-            <div className={`card h-100 ${darkMode ? 'bg-secondary text-light' : ''}`}>
+            <div className="card h-100" style={{ backgroundColor: 'var(--card-bg)', color: 'var(--text-color)' }}>
               <img 
                 src="/api/placeholder/400/300" 
                 className="card-img-top" 
@@ -47,10 +47,10 @@ const PortfolioSection = () => {
                   An interesting project showcasing different skills and problem-solving.
                 </p>
                 <div className="mb-3">
-                  <span className={`badge ${darkMode ? 'bg-dark border border-light' : 'bg-light text-dark'} me-2`}>TypeScript</span>
-                  <span className={`badge ${darkMode ? 'bg-dark border border-light' : 'bg-light text-dark'}`}>Firebase</span>
+                  <span className="badge me-2" style={{ backgroundColor: 'var(--accent-bg)', color: 'var(--text-color)' }}>React</span>
+                  <span className="badge me-2" style={{ backgroundColor: 'var(--accent-bg)', color: 'var(--text-color)' }}>React</span>
                 </div>
-                <a href="#" className={`text-decoration-none ${darkMode ? 'text-warning' : ''}`}>
+                <a href="#" className="text-decoration-none" style={{ color: 'var(--accent-color)' }}>
                   View Project <i className="bi bi-box-arrow-up-right ms-1"></i>
                 </a>
               </div>
@@ -59,7 +59,7 @@ const PortfolioSection = () => {
 
           {/* Project 3 */}
           <div className="col-md-6 col-lg-4">
-            <div className={`card h-100 ${darkMode ? 'bg-secondary text-light' : ''}`}>
+          <div className="card h-100" style={{ backgroundColor: 'var(--card-bg)', color: 'var(--text-color)' }}>
               <img 
                 src="/api/placeholder/400/300" 
                 className="card-img-top" 
@@ -71,10 +71,10 @@ const PortfolioSection = () => {
                   A description of this application and the challenges overcome during development.
                 </p>
                 <div className="mb-3">
-                  <span className={`badge ${darkMode ? 'bg-dark border border-light' : 'bg-light text-dark'} me-2`}>Vue.js</span>
-                  <span className={`badge ${darkMode ? 'bg-dark border border-light' : 'bg-light text-dark'}`}>MongoDB</span>
+                  <span className="badge me-2" style={{ backgroundColor: 'var(--accent-bg)', color: 'var(--text-color)' }}>React</span>
+                  <span className="badge me-2" style={{ backgroundColor: 'var(--accent-bg)', color: 'var(--text-color)' }}>React</span>
                 </div>
-                <a href="#" className={`text-decoration-none ${darkMode ? 'text-warning' : ''}`}>
+                <a href="#" className="text-decoration-none" style={{ color: 'var(--accent-color)' }}>
                   View Project <i className="bi bi-box-arrow-up-right ms-1"></i>
                 </a>
               </div>

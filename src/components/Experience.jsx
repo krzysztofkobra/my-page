@@ -5,13 +5,13 @@ const ExperienceSection = () => {
   const { darkMode } = useTheme();
 
   return (
-    <section className={`experience-section py-5 ${darkMode ? 'bg-dark text-light' : 'bg-light text-dark'}`}>
+    <section className="experience-section py-5" style={{ backgroundColor: 'var(--primary-bg)', color: 'var(--text-color)' }}>
       <div className="container">
         <h2 className="text-center mb-4">Work Experience</h2>
         <div className="row justify-content-center">
           <div className="col-lg-8">
             {/* Experience Item 1 */}
-            <div className={`card mb-4 ${darkMode ? 'bg-secondary text-light' : ''}`}>
+            <div className="card mb-4" style={{ backgroundColor: 'var(--card-bg)', color: 'var(--text-color)' }}>
               <div className="card-body">
                 <div className="d-md-flex justify-content-between mb-3">
                   <h3 className="h5 mb-0">Senior Developer</h3>
@@ -28,7 +28,7 @@ const ExperienceSection = () => {
             </div>
 
             {/* Experience Item 2 */}
-            <div className={`card ${darkMode ? 'bg-secondary text-light' : ''}`}>
+            <div className="card mb-4" style={{ backgroundColor: 'var(--card-bg)', color: 'var(--text-color)' }}>
               <div className="card-body">
                 <div className="d-md-flex justify-content-between mb-3">
                   <h3 className="h5 mb-0">Full Stack Developer</h3>
