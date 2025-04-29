@@ -14,7 +14,7 @@ const Header = () => {
           <div className="profile-container">
           <div className="profile-image-container">
               <img 
-                src={darkMode ? normal : dark} 
+                src={darkMode ? `${process.env.PUBLIC_URL}/images/bez.png` : `${process.env.PUBLIC_URL}/images/szre.png`} 
                 alt="Szymon Wydra" 
                 className="profile-image"
               />
