@@ -15,7 +15,7 @@ const Footer = () => {
             <i className="bi bi-envelope"></i>
           </a>
         </div>
-        <p className="mb-0">© {new Date().getFullYear()} Your Name. All rights reserved.</p>
+        <p className="mb-0">© {new Date().getFullYear()} Szymon Wydra. All rights reserved.</p>
       </div>
     </footer>
   );

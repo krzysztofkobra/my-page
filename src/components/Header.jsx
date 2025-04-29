@@ -20,7 +20,7 @@ const Header = () => {
           </div>
           <div className="hero-details">
             <h1>Szymon Wydra</h1>
-            <h2>Software Engineer</h2>
+            <h2>Software Developer</h2>
             <div className="social-links">
               <a href="https://github.com/krzysztofkobra">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
