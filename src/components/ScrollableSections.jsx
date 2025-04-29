@@ -30,7 +30,7 @@ const ScrollableSections = () => {
     {
       title: 'Minecraft',
       description: 'A brief description of this amazing project and what technologies were used.',
-      image: '/images/example.jpg',
+      image: './images/example.jpg',
       technologies: ['React', 'Node.js', 'CSS'],
       github: 'https://github.com/krzysztofkobra/ClockApp'
     },
