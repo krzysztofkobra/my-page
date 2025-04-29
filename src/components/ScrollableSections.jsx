@@ -12,10 +12,18 @@ const ScrollableSections = () => {
       description: 'Led the development of critical features for the company\'s flagship product. Mentored junior developers and implemented best practices that improved code quality.'
     },
     {
-      title: 'Full Stack Developer',
+      title: 'ZSTiO',
       company: 'Previous Company • 2018 - 2021',
       description: 'Developed and maintained web applications using React, Node.js, and SQL. Collaborated with design team to implement responsive UI components.'
-    }
+    },{
+      title: 'Senior Developer',
+      company: 'Tech Company • 2021 - Present',
+      description: 'Led the development of critical features for the company\'s flagship product. Mentored junior developers and implemented best practices that improved code quality.'
+    },{
+      title: 'Senior Developer',
+      company: 'Tech Company • 2021 - Present',
+      description: 'Led the development of critical features for the company\'s flagship product. Mentored junior developers and implemented best practices that improved code quality.'
+    },
   ];
 
   const projects = [
@@ -74,9 +82,8 @@ const ScrollableSections = () => {
                       </span>
                     ))}
                   </div>
-                  <a href="https://github.com/username/your-repo" target="_blank" rel="noopener noreferrer" className="github-link">Learn more</a>
-                
-              </div>
+                  <a href={projects[currentProject].github} target="_blank" rel="noopener noreferrer" className="github-link">Learn more</a>
+                </div>
             </div>
 
             <div className="portfolio-navigation mt-3 text-center">
@@ -109,7 +116,7 @@ const ScrollableSections = () => {
         </div>
 
         <div className="scroll-card" style={{ maxWidth: '700px' }}>
-          <h2 className="card-title">Work Experience</h2>
+          <h2 className="card-title">Experience</h2>
           <div className="work-experience">
             {experienceItems.map((item, index) => (
               <div key={index} className="work-experience-item">
