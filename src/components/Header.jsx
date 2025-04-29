@@ -1,6 +1,8 @@
 import React from 'react';
 import { useTheme } from '../contexts/ThemeContext';
 import '../styles/Header.css';
+import dark from '../images/szre.png';
+import normal from '../images/bez.png';
 
 const Header = () => {
   const { darkMode } = useTheme();
@@ -12,7 +14,7 @@ const Header = () => {
           <div className="profile-container">
           <div className="profile-image-container">
               <img 
-                src={darkMode ? "./images/szre.png" : "./images/bez.png"} 
+                src={darkMode ? dark : normal} 
                 alt="Szymon Wydra" 
                 className="profile-image"
               />
