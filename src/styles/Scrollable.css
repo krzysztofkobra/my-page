@@ -1,0 +1,241 @@
+.scrollable-sections {
+    padding: 4rem 2rem;
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+  }
+  
+  .scroll-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+    scrollbar-color: var(--accent-color) var(--accent-bg);
+    scrollbar-width: thin;
+  }
+  
+  .scroll-card {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    min-width: 700px;
+    max-height: 700px;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: var(--card-shadow);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .card-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+  }
+  
+  .card-content {
+    overflow-y: auto;
+    margin-top: 1.5rem;
+    padding-right: 0.5rem;
+    flex-grow: 1;
+    scrollbar-color: var(--accent-color) var(--accent-bg);
+    scrollbar-width: thin;
+  }
+  
+  .scroll-wrapper::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+  }
+  
+  .scroll-wrapper::-webkit-scrollbar-thumb {
+    background-color: var(--accent-color);
+    border-radius: 3px;
+  }
+  
+  .scroll-wrapper::-webkit-scrollbar-track {
+    background-color: var(--accent-bg);
+    border-radius: 3px;
+  }
+  
+  .nav-button {
+    background-color: transparent;
+    border: none;
+    padding: 0.8rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-button svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--accent-color);
+    transition: fill 0.3s ease;
+  }
+  
+  .nav-button:hover svg {
+    fill: var(--accent-bg); 
+  }  
+  
+  .project-card {
+    position: relative;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    min-width: 700px;
+    max-height: 600px;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: var(--card-shadow);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    flex-grow: 1;
+  }
+
+  .card-body {
+    padding: 1rem;
+    z-index: 1;
+  }
+  
+  .work-experience {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .work-experience-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+  }
+  
+  .dot-line {
+    position: relative;
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8px;
+  }
+  
+  .dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+  }
+  
+  .line {
+    width: 2px;
+    height: 170px;
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    position: absolute;
+    top: 20px;
+  }
+  
+  .work-experience-content {
+    padding-left: 20px;
+  }
+  
+  .work-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--text-color);
+  }
+  
+  .work-company {
+    font-size: 1.1rem;
+    color: var(--accent-color);
+    margin-top: 0.5rem;
+  }
+  
+  .work-description {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-top: 0.5rem;
+  }
+  
+  .project-card:hover,
+  .project-card:hover .card {
+    transform: none !important;
+  }
+
+  .project-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    padding: 1rem;
+    border-radius: 0 0 1rem 1rem;
+    text-align: center;
+    height: 150px;
+  }
+  
+  .project-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+  }
+  
+  .technologies {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .github-link {
+    color: #24292f;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: transparent;
+  }
+  
+  .github-link:hover {
+    color: white;
+  }
+
+  
+  .card:hover {
+    transform: none !important;
+  }
+
+  .tech-tag {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    display: inline-block;
+    margin-right: 0.5rem;
+    background-color: var(--accent-color);
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .tech-tag:last-child {
+    margin-right: 0;
+  }
+  
+  .card-project {
+    position: relative;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    min-width: 700px;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: var(--card-shadow);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center top;
+    flex-grow: 1;
+    height: 500px;
+  }
