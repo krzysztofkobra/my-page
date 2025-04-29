@@ -31,13 +31,6 @@ const AboutSection = () => {
     'German (B1)',
     'Polish (native)'
   ];
-
-  const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
  
   return (
     <section className="about-section py-10 px-4" style={{ backgroundColor: 'var(--primary-bg)', color: 'var(--text-color)' }}>
