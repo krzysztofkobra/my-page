@@ -36,7 +36,7 @@
 
 .about-tag {
   background-color: var(--accent-bg);
-  color: var(--accent-color);
+  color: var(--tag-color);
   padding: 6px 12px;
   border-radius: 4px;
   font-size: 0.85rem;
