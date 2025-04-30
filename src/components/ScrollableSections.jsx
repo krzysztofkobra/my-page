@@ -1,9 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTheme } from '../contexts/ThemeContext';
 import '../styles/Scrollable.css';
 
 const ScrollableSections = () => {
   const { darkMode } = useTheme();
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   const experienceItems = [
     {
@@ -62,8 +74,8 @@ const ScrollableSections = () => {
 
   return (
     <section className="scrollable-sections">
-      <div className="scroll-wrapper" style={{ maxWidth: '85%', margin: '0 auto' }}>
-        <div className="scroll-card" style={{ width: '60%' }}>
+      <div className="scroll-wrapper">
+        <div className="scroll-card">
           <h2 className="card-title">Projects</h2>
           <div className="card-content">
             <div

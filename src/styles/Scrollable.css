@@ -1,14 +1,19 @@
 .scrollable-sections {
-  padding: 4rem 2rem;
+  padding: 4rem 1rem;
+  display: flex;
+  justify-content: center;
   background-color: var(--primary-bg);
   color: var(--text-color);
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .scroll-wrapper {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   gap: 2rem;
-  overflow-x: auto;
+  width: 100%;
+  max-width: 100%;
   padding-bottom: 1rem;
   scrollbar-color: var(--accent-color) var(--accent-bg);
   scrollbar-width: thin;
@@ -17,9 +22,11 @@
 .scroll-card {
   background-color: var(--card-bg);
   color: var(--text-color);
-  min-width: 700px;
+  width: 100%;
+  max-width: 750px;
+  min-width: auto;
   max-height: 700px;
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 1rem;
   box-shadow: var(--card-shadow);
   display: flex;
@@ -30,7 +37,7 @@
 .card-title {
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .card-content {
@@ -80,7 +87,8 @@
   position: relative;
   background-color: var(--card-bg);
   color: var(--text-color);
-  min-width: 700px;
+  width: 100%;
+  max-width: 100%;
   max-height: 600px;
   padding: 1rem;
   border-radius: 1rem;
@@ -105,21 +113,24 @@
   align-items: flex-start;
   max-height: 500px;
   overflow-y: auto; 
+  width: 100%;
 }
 
 .work-experience-item {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 2rem;
+  width: 100%;
 }
 
+
 .dot-line {
-  position: relative;
-  width: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 8px;
+  width: 40px;
+  flex-shrink: 0;
+  align-self: stretch;
+  position: relative;
 }
 
 .dot {
@@ -127,19 +138,21 @@
   height: 15px;
   border-radius: 50%;
   background-color: var(--accent-color);
+  z-index: 1;
 }
 
 .line {
+  flex-grow: 1;
   width: 2px;
-  height: 170px;
   background-color: var(--accent-color);
   border-radius: 10px;
-  position: absolute;
-  top: 20px;
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 
 .work-experience-content {
   padding-left: 20px;
+  width: 90%;
 }
 
 .work-title {
@@ -207,6 +220,7 @@
   font-size: 0.875rem;
   display: inline-block;
   margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
   background-color: var(--accent-color);
   color: white;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -220,18 +234,19 @@
   position: relative;
   background-color: var(--card-bg);
   color: var(--text-color);
-  min-width: 700px;
+  width: 100%;
+  max-width: 100%;
   padding: 1rem;
   border-radius: 1rem;
   box-shadow: var(--card-shadow);
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  background-size: 100% auto;
+  background-size: auto;
   background-repeat: no-repeat;
   background-position: center top;
   flex-grow: 1;
-  height: 500px;
+  height: 400px;
 }
 
 .cv-button {
@@ -275,7 +290,49 @@
   fill: currentColor;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
+  .scroll-wrapper {
+    flex-direction: row;
+    justify-content: center;
+    max-width: 95%;
+  }
+  
+  .scroll-card {
+    padding: 2rem;
+  }
+  
+  .card-project {
+    height: 500px;
+  }
+}
+
+@media (max-width: 767px) {
+  .scroll-card {
+    min-width: auto;
+    max-width: 95%;
+  }
+  
+  .card-title {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .work-title {
+    font-size: 1.2rem;
+  }
+  
+  .work-company {
+    font-size: 1rem;
+  }
+  
+  .line {
+    height: 200px;
+  }
+  
+  .tech-tag {
+    padding: 0.3rem 0.8rem;
+  }
+  
   .cv-button {
     padding: 0.5rem 1rem;
   }
