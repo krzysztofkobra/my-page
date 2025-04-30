@@ -23,21 +23,6 @@ const ScrollableSections = () => {
       company: 'ML System • 2024-07 - 2024-09',
       description: 'During my internship, I worked on optimizing the project, particularly in the area of buffer management and read queues. During this time, I familiarized myself with the operation of the Modbus protocol and the ESP32 and Arduino architectures. I also gained valuable experience in teamwork, which allowed me to collaborate effectively and achieve our shared project goals.'
     },
-    {
-      title: 'Embedded Software Developer',
-      company: 'ML System • 2024-07 - 2024-09',
-      description: 'During my internship, I worked on optimizing the project, particularly in the area of buffer management and read queues. During this time, I familiarized myself with the operation of the Modbus protocol and the ESP32 and Arduino architectures. I also gained valuable experience in teamwork, which allowed me to collaborate effectively and achieve our shared project goals.'
-    },
-    {
-      title: 'Embedded Software Developer',
-      company: 'ML System • 2024-07 - 2024-09',
-      description: 'During my internship, I worked on optimizing the project, particularly in the area of buffer management and read queues. During this time, I familiarized myself with the operation of the Modbus protocol and the ESP32 and Arduino architectures. I also gained valuable experience in teamwork, which allowed me to collaborate effectively and achieve our shared project goals.'
-    },
-    {
-      title: 'Embedded Software Developer',
-      company: 'ML System • 2024-07 - 2024-09',
-      description: 'During my internship, I worked on optimizing the project, particularly in the area of buffer management and read queues. During this time, I familiarized myself with the operation of the Modbus protocol and the ESP32 and Arduino architectures. I also gained valuable experience in teamwork, which allowed me to collaborate effectively and achieve our shared project goals.'
-    },
   ];
 
   const educationItems = [
