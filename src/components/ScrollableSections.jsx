@@ -21,20 +21,7 @@ const ScrollableSections = () => {
     {
       title: 'Embedded Software Developer',
       company: 'ML System • 2024-07 - 2024-09',
-      description: 'Led the development of critical features for the company\'s flagship product. Mentored junior developers and implemented best practices that improved code quality.'
-    },
-    {
-      title: 'ZSTiO',
-      company: 'Previous Company • 2018 - 2021',
-      description: 'Developed and maintained web applications using React, Node.js, and SQL. Collaborated with design team to implement responsive UI components.'
-    },{
-      title: 'Senior Developer',
-      company: 'Tech Company • 2021 - Present',
-      description: 'Led the development of critical features for the company\'s flagship product. Mentored junior developers and implemented best practices that improved code quality.'
-    },{
-      title: 'Senior Developer',
-      company: 'Tech Company • 2021 - Present',
-      description: 'Led the development of critical features for the company\'s flagship product. Mentored junior developers and implemented best practices that improved code quality.'
+      description: 'During my internship, I worked on optimizing the project, particularly in the area of buffer management and read queues. During this time, I familiarized myself with the operation of the Modbus protocol and the ESP32 and Arduino architectures. I also gained valuable experience in teamwork, which allowed me to collaborate effectively and achieve our shared project goals.'
     },
   ];
 

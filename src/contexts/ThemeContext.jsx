@@ -13,10 +13,11 @@ export const ThemeProvider = ({ children }) => {
     } else if (savedTheme === 'light') {
       setDarkMode(false);
       document.body.classList.remove('dark-mode');
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      setDarkMode(true);
-      document.body.classList.add('dark-mode');
-    }
+    } 
+    //   else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    //   setDarkMode(true);
+    //   document.body.classList.add('dark-mode');
+    // }
   }, []);
 
   useEffect(() => {
