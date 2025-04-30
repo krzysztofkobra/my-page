@@ -155,7 +155,7 @@ const ScrollableSections = () => {
             
           </div>
           <a 
-            href="/my-page/cv-szymon-wydra-programista.pdf" 
+            href="/cv-szymon-wydra-programista.pdf" 
             download="cv-szymon-wydra-programista.pdf" 
             className="cv-button" 
             onClick={(e) => {
