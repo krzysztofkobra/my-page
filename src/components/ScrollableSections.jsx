@@ -19,8 +19,8 @@ const ScrollableSections = () => {
 
   const experienceItems = [
     {
-      title: 'Senior Developer',
-      company: 'Tech Company • 2021 - Present',
+      title: 'Embedded Software Developer',
+      company: 'ML System • 2024-07 - 2024-09',
       description: 'Led the development of critical features for the company\'s flagship product. Mentored junior developers and implemented best practices that improved code quality.'
     },
     {
@@ -37,6 +37,14 @@ const ScrollableSections = () => {
       description: 'Led the development of critical features for the company\'s flagship product. Mentored junior developers and implemented best practices that improved code quality.'
     },
   ];
+
+  const educationItems = [
+    {
+      title: 'ZSTiO Jarosław',
+      company: '2021 - 2026',
+      description: 'Programming in C++, Python, Java, Developing web applications using HTML, CSS, JavaScript, Angular, Bootstrap, Working with relational databases (MySQL), Creating mobile applications in Java (Android), Understanding of algorithms, OOP, software design patterns, Version control with Git, Building desktop applications using PyQt'
+    },
+  ]
 
   const projects = [
     {
@@ -73,6 +81,7 @@ const ScrollableSections = () => {
   };
 
   return (
+    <>
     <section className="scrollable-sections">
       <div className="scroll-wrapper">
         <div className="scroll-card">
@@ -167,6 +176,31 @@ const ScrollableSections = () => {
         </div>
       </div>
     </section>
+
+    <section className="scrollable-sections" style={{ paddingBottom: '6rem' }}>
+    <div className="scroll-wrapper">
+      <div className="scroll-card" style={{ maxWidth: '1500px' }}>
+        <h2 className="card-title">Education</h2>
+        <div className="work-experience">
+            {educationItems.map((item, index) => (
+              <div key={index} className="work-experience-item">
+                <div className="dot-line">
+                  <span className="dot"></span>
+                  {index < educationItems.length - 1 && <span className="line"></span>}
+                </div>
+                <div className="work-experience-content" style={{ width: '90%' }}>
+                  <h3 className="work-title">{item.title}</h3>
+                  <p className="work-company">{item.company}</p>
+                  <p className="work-description">{item.description}</p>
+                </div>
+              </div>
+            ))}
+            
+          </div>
+      </div>
+    </div>
+    </section>
+    </>
   );
 };
 

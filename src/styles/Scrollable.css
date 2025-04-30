@@ -1,11 +1,11 @@
 .scrollable-sections {
-  padding: 4rem 1rem;
+  padding: 4rem 1rem 1rem;
   display: flex;
   justify-content: center;
   background-color: var(--primary-bg);
   color: var(--text-color);
   width: 100%;
-  overflow-x: hidden;
+  overflow: auto;
 }
 
 .scroll-card {
@@ -254,10 +254,16 @@
   height: 400px;
 }
 
+.scroll-card,
+.card-project {
+  position: relative;
+}
+
 .cv-button {
   margin-top: 1.5rem;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   background-color: var(--button-bg);
   color: var(--button-text);
@@ -269,11 +275,20 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border: none;
   cursor: pointer;
+  position: absolute;
+  bottom: 1.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  margin-top: 0;
 }
 
 .cv-button:hover {
-  transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.cv-button:hover svg{
+  transform: translateY(2px);
 }
 
 .cv-button:active {
@@ -339,7 +354,12 @@
   }
   
   .cv-button {
+    position: static;
     padding: 0.5rem 1rem;
+    margin-top: 2rem;
+    width: 100%;
+    left: auto;
+    transform: none;
   }
 
   .dot-line{
