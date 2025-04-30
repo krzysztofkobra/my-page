@@ -8,17 +8,6 @@
   overflow-x: hidden;
 }
 
-.scroll-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  width: 100%;
-  max-width: 100%;
-  padding-bottom: 1rem;
-  scrollbar-color: var(--accent-color) var(--accent-bg);
-  scrollbar-width: thin;
-}
-
 .scroll-card {
   background-color: var(--card-bg);
   color: var(--text-color);
@@ -45,22 +34,37 @@
   margin-top: 1.5rem;
   padding-right: 0.5rem;
   flex-grow: 1;
-  scrollbar-color: var(--accent-color) var(--accent-bg);
+}
+
+.scroll-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  max-width: 100%;
+  padding-bottom: 1rem;
+  scrollbar-color: var(--accent-color) var(--webkit-color);
   scrollbar-width: thin;
 }
 
-.scroll-wrapper::-webkit-scrollbar {
-  height: 6px;
-  width: 6px;
+.scrollable-sections .scroll-wrapper {
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-color) var(--webkit-color);
+  overflow-y: auto;
 }
 
-.scroll-wrapper::-webkit-scrollbar-thumb {
-  background-color: var(--accent-color);
+.scrollable-sections .scroll-wrapper::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.scrollable-sections .scroll-wrapper::-webkit-scrollbar-thumb {
+  background-color: var(--accent-color) !important;
   border-radius: 3px;
 }
 
-.scroll-wrapper::-webkit-scrollbar-track {
-  background-color: var(--accent-bg);
+.scrollable-sections .scroll-wrapper::-webkit-scrollbar-track {
+  background-color: var(--webkit-color) !important;
   border-radius: 3px;
 }
 
@@ -153,7 +157,7 @@
 
 .work-experience-content {
   padding-left: 20px;
-  width: 90%;
+  width: 80%;
 }
 
 .work-title {
@@ -310,7 +314,7 @@
 @media (max-width: 767px) {
   .scroll-card {
     min-width: auto;
-    max-width: 95%;
+    max-width: 100%;
   }
   
   .card-title {

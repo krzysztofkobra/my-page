@@ -1,5 +1,3 @@
-/* Update to global.css - Add responsive styles */
-
 :root {
   --primary-bg: #f8f5eb;
   --secondary-bg: #f3efe2;
@@ -17,6 +15,7 @@
   --footer-text: #d4cfc9;
   --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
   --hero-text: #433c38;
+  --webkit-color: #f4e2bf;
   --accent-bg: #f4e2bf;
 }
 
@@ -37,6 +36,7 @@
   --footer-text: #9e9a91;
   --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   --hero-text: #e6e2d9;
+  --webkit-color: #925f2b;
   --accent-bg: #c18244;
 }
 
