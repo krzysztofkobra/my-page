@@ -55,18 +55,18 @@ const ScrollableSections = () => {
       github: 'https://github.com/krzysztofkobra/ClockApp'
     },
     {
-      title: 'Another Project',
+      title: 'ClockApp',
       description: 'An interesting project showcasing different skills and problem-solving.',
-      image: '',
-      technologies: ['Vue.js', 'Firebase'],
-      github: 'https://github.com/username/another-project'
+      image: `${process.env.PUBLIC_URL}/images/clockapp.png`,
+      technologies: ['Python', 'PyQt'],
+      github: 'https://github.com/krzysztofkobra/clock_app'
     },
     {
-      title: 'Third Project',
+      title: 'DayNote',
       description: 'A third amazing project.',
-      image: '',
-      technologies: [],
-      github: 'https://github.com/username/third-project'
+      image: `${process.env.PUBLIC_URL}/images/daynote.png`,
+      technologies: ['Python', 'Django', 'JavaScript', 'HTML', 'CSS', 'Bootstrap'],
+      github: 'https://github.com/krzysztofkobra/DayNote'
     }
   ];
 
@@ -177,7 +177,7 @@ const ScrollableSections = () => {
       </div>
     </section>
 
-    <section className="scrollable-sections" style={{ paddingBottom: '6rem' }}>
+    <section className="scrollable-sections" style={{ paddingBottom: '5rem' }}>
     <div className="scroll-wrapper">
       <div className="scroll-card" style={{ maxWidth: '1500px' }}>
         <h2 className="card-title">Education</h2>

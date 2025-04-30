@@ -247,9 +247,9 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center;
   flex-grow: 1;
   height: 400px;
 }
