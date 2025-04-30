@@ -127,6 +127,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 8px;
   width: 40px;
   flex-shrink: 0;
   align-self: stretch;
@@ -146,8 +147,8 @@
   width: 2px;
   background-color: var(--accent-color);
   border-radius: 10px;
-  margin-top: 6px;
-  margin-bottom: 6px;
+  position: relative;
+  margin-top: 8px;
 }
 
 .work-experience-content {
@@ -335,5 +336,13 @@
   
   .cv-button {
     padding: 0.5rem 1rem;
+  }
+
+  .dot-line{
+    margin-top: 5px;
+  }
+  
+  .line{
+    margin-top: 5px;
   }
 }
