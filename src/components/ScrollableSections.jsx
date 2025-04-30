@@ -48,11 +48,18 @@ const ScrollableSections = () => {
 
   const projects = [
     {
-      title: 'Minecraft',
-      description: 'A brief description of this amazing project and what technologies were used.',
-      image: `${process.env.PUBLIC_URL}/images/example.jpg`,
-      technologies: ['React', 'Node.js', 'CSS'],
-      github: 'https://github.com/krzysztofkobra/ClockApp'
+      title: 'DayNote',
+      description: 'A third amazing project.',
+      image: `${process.env.PUBLIC_URL}/images/daynote.png`,
+      technologies: ['Python', 'Django', 'JavaScript', 'HTML', 'CSS', 'Bootstrap'],
+      github: 'https://github.com/krzysztofkobra/DayNote'
+    },
+    {
+      title: 'Discord Dall-E Bot',
+      description: 'A third amazing project.',
+      image: `${process.env.PUBLIC_URL}/images/dallebot.png`,
+      technologies: ['JavaScript', 'Node.js', 'Discord.js', 'OpenAI API'],
+      github: 'https://github.com/krzysztofkobra/discord-bot-dall-e'
     },
     {
       title: 'ClockApp',
@@ -62,12 +69,13 @@ const ScrollableSections = () => {
       github: 'https://github.com/krzysztofkobra/clock_app'
     },
     {
-      title: 'DayNote',
+      title: 'Discord AI Chatbot',
       description: 'A third amazing project.',
-      image: `${process.env.PUBLIC_URL}/images/daynote.png`,
-      technologies: ['Python', 'Django', 'JavaScript', 'HTML', 'CSS', 'Bootstrap'],
-      github: 'https://github.com/krzysztofkobra/DayNote'
-    }
+      image: `${process.env.PUBLIC_URL}/images/chatbot.png`,
+      technologies: ['JavaScript', 'Node.js', 'Discord.js', 'OpenAI API'],
+      github: 'https://github.com/krzysztofkobra/discord-chatbot-gpt'
+    },
+    
   ];
 
   const [currentProject, setCurrentProject] = useState(0);

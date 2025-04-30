@@ -14,17 +14,23 @@ const AboutSection = () => {
     'Gym',
     'Robotics',
     'Gaming',
-    'Cars'  
+    'Cars',
+    'Technology & Innovation',
+    'Space & Science',
+    'Personal Growth'
   ];
 
   const skills = [
     'Python',
     'JavaScript',
-    'React',
     'C++',
+    'TypeScript',
+    'Django',
+    'Node.js',
+    'React',
+    'Angular',
     'MySQL',
     'HTML & CSS',
-    'Django',
     'git',
     'Java',
     'English (C2)',
@@ -39,12 +45,10 @@ const AboutSection = () => {
       <div className="col-lg-5" style={{ paddingRight: '20px' }}>
         <h2 className="about-heading">About Me</h2>
         <p className="about-paragraph">
-          I'm a passionate software developer with expertise in full-stack development. I love creating clean,
-          efficient, and user-friendly applications that solve real-world problems.
+          I'm a passionate software developer with a broad skill set spanning web, mobile, and desktop technologies. I enjoy building clean, efficient, and practical solutions that solve real-world problems and provide great user experiences.
         </p>
         <p className="about-paragraph secondary">
-          With a strong foundation in modern web technologies and a keen eye for design, I strive to build
-          software that functions flawlessly and delivers a great experience.
+        Curious and self-driven, I constantly explore new tools and technologies through personal projects. I value growth, honesty, and responsibility — and I strive to reflect that in both my work and how I work with others.
         </p>
         <p className="about-paragraph italic">
         Always learning, always evolving — staying sharp in the fast-paced world of tech.
