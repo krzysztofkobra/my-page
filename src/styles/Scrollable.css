@@ -336,6 +336,10 @@
     font-size: 1.75rem;
     margin-bottom: 1.5rem;
   }
+
+  .nav-button:hover svg {
+    fill: var(--accent-color);
+  }
   
   .work-title {
     font-size: 1.2rem;
