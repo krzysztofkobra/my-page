@@ -161,7 +161,7 @@ const ScrollableSections = () => {
             onClick={(e) => {
               e.preventDefault();
               const link = document.createElement('a');
-              link.href = '/my-page/cv-szymon-wydra-programista.pdf';
+              link.href = '/cv-szymon-wydra-programista.pdf';
               link.download = 'cv-szymon-wydra-programista.pdf';
               document.body.appendChild(link);
               link.click();
