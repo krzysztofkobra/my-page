@@ -1,1 +1,1 @@
-swydra.pl
+www.swydra.pl
